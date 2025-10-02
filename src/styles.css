@@ -11,3 +11,131 @@
 .font-audiowide {
     font-family: 'Audiowide';
 }
+
+.bg-star-tiny {
+    background-image: url("../public/assets/star_tiny.png");
+}
+
+.bg-star-small {
+    background-image: url("../public/assets/star_small.png");
+}
+
+.bg-star-medium {
+    background-image: url("../public/assets/star_medium.png");
+}
+
+.bg-star-large {
+    background-image: url("../public/assets/star_large.png");
+}
+
+.bg-meteor-small {
+    background-image: url("../public/assets/meteor_small.png");
+}
+
+.bg-meteor-large {
+    background-image: url("../public/assets/meteor_large.png");
+}
+
+.bg-meteor-detailed-small {
+    background-image: url("../public/assets/meteor_detailedSmall.png");
+}
+
+.bg-meteor-detailed-large{
+    background-image: url("../public/assets/meteor_detailedLarge.png");
+}
+
+.bg-meteor-square-small{
+    background-image: url("../public/assets/meteor_squareSmall.png");
+}
+
+.bg-meteor-square-large{
+    background-image: url("../public/assets/meteor_squareLarge.png");
+}
+
+.bg-meteor-detailed-square-small{
+    background-image: url("../public/assets/meteor_squareDetailedSmall.png");
+} 
+
+.bg-meteor-detailed-square-large {
+    background-image: url("../public/assets/meteor_squareDetailedLarge.png");
+}
+
+@keyframes fade-and-move-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-and-move-up {
+    animation: fade-and-move-up 5s ease-out forwards;
+}
+
+@keyframes fade-and-move-down {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+.fade-and-move-down {
+    animation: fade-and-move-down 1s ease-out forwards;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    animation: fade-up 5s ease-out forwards;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-down {
+    animation: fade-down 5s ease-out forwards;
+}
+
+.animation-delay-3 {
+    animation-delay: 3s;
+}
+
+.animation-delay-6 {
+    animation-delay: 6s;
+}
+
+.animation-delay-7\.5 {
+    animation-delay: 7.5s;
+}
+
+.text-glow {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.box-glow {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
