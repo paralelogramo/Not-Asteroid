@@ -1,0 +1,21 @@
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-spin-pulse {
+  animation-delay: 10ms;
+  animation:
+    spin-slow 8s linear infinite,
+    pulse-slow 4s ease-in-out infinite;
+}
+
+.is-button-active {
+    scale: 0.95;
+    box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}

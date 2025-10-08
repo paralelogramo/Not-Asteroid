@@ -1,3 +1,12 @@
-<div class="h-screen w-screen overflow-hidden bg-slate-900">
-    <app-home (selectedOption)="handleSelectedOption($event)"></app-home>
-</div>
+<div class="relative w-screen h-screen overflow-hidden bg-slate-900">
+    <div class="absolute inset-0 z-0 opacity-50 blur-[1px]" id="stars-container"></div>
+    
+    @switch (currentView) {
+        @case ("home") {
+            <app-home (selectedOption)="handleSelectedOption($event)"></app-home>
+        }
+        @case ("credit") {
+            <app-credit (backHandler)="handleSelectedOption($event)"></app-credit>
+        }
+    }
+</div> 

@@ -1,1 +1,55 @@
-<p>credit works!</p>
+<div class="relative flex flex-col w-full h-full opacity-100 select-none font-audiowide credit-view">
+    
+
+    <div class="absolute top-[12.5%] left-1/2 -translate-x-1/2 whitespace-nowrap flex flex-col justify-center gap-3 items-center z-10">
+        <div class="opacity-0 fade-and-move-up animation-delay-0.5 perspective-midrange">
+            <h1 class="text-[7vh] text-slate-100 text-centers rotate-x-[12deg] origin-bottom text-glow">
+                Developed by V. Rojas A.
+            </h1>
+        </div>
+        <div class="opacity-0 fade-and-move-up animation-delay-1.5">
+            <h2 class="text-[2.5vh] italic text-slate-400">Solo dev project — built with passion and caffeine</h2>
+        </div>
+        <div class="opacity-0 fade-and-move-up animation-delay-2.5">
+            <h2 class="text-[1.5vh] italic text-slate-400">...A LOT OF CAFFEINE</h2>
+        </div>
+        <div class="opacity-0 fade-and-move-up animation-delay-3.5 perspective-midrange mt-4">
+            <h1 class="text-[4vh] text-slate-100 text-centers origin-bottom text-glow">
+                Technologies:
+            </h1>
+        </div>
+    </div>
+
+    <div class="absolute top-[45%] left-1/2 -translate-x-1/2 flex flex-row justify-center items-center z-10 gap-16">
+
+        @for (tech of technologies; track $index) {
+            <div class="relative flex p-2 transition-transform duration-300 opacity-0 rounded-3xl hover:scale-105 hover:cursor-pointer group animation-delay-4.5 fade-and-move-up">
+                <div class="absolute inset-0 transition-opacity duration-700 opacity-0 rounded-3xl blur-xl group-hover:opacity-100" [ngClass]="tech.class"></div>
+
+                <div class="relative bg-slate-800/80 rounded-3xl shadow-[0_0_25px_rgba(255,255,255,0.5)] flex items-center justify-center p-3 border-2 border-slate-100">
+                    <img [src]="tech.img" [alt]="tech.alt" class="w-[12vh] aspect-square rounded-2xl object-contain">
+                </div>
+            </div>
+        }
+
+    </div>
+
+
+
+    <div class="absolute bottom-[15%] left-1/2 -translate-1/2 flex flex-row gap-12 w-1/3 justify-center items-center fade-and-move-up opacity-0 animation-delay-5.5">
+        <button id="credit-btn" class="w-2/5 text-white text-[2vh] px-12 py-3 rounded-3xl border-2 border-slate-100 bg-slate-900 bg-opacity-40 backdrop-blur-sm opacity-100 cursor-pointer
+            shadow-[0_0_20px_rgba(255,255,255,0.2)]
+            transition-all duration-300 ease-in-out
+            hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]
+            disabled:pointer-events-none disabled:cursor-default" (click)="clickBack()" [disabled]="disabledButtons">
+            BACK
+        </button>
+    </div>
+
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-[2vh] text-slate-500 text-center fade-and-move-up opacity-0 animation-delay-6.5">
+        © 2025 V. Rojas A. — MIT License
+    </div>
+
+
+
+</div>

@@ -73,7 +73,7 @@
 }
 
 .fade-and-move-up {
-    animation: fade-and-move-up 5s ease-out forwards;
+    animation: fade-and-move-up 3s ease-out forwards;
 }
 
 @keyframes fade-and-move-down {
@@ -89,7 +89,7 @@
 }
 
 .fade-and-move-down {
-    animation: fade-and-move-down 1s ease-out forwards;
+    animation: fade-and-move-down 3s ease-out forwards;
 }
 
 @keyframes fade-up {
@@ -103,7 +103,7 @@
 }
 
 .fade-up {
-    animation: fade-up 5s ease-out forwards;
+    animation: fade-up 3s ease-out forwards;
 }
 
 @keyframes fade-down {
@@ -117,19 +117,67 @@
 }
 
 .fade-down {
-    animation: fade-down 5s ease-out forwards;
+    animation: fade-down 3s ease-out forwards;
+}
+
+.animation-delay-0\.5 {
+    animation-delay: 0.5s;
+}
+
+.animation-delay-1\.5 {
+    animation-delay: 1.5s;
+}
+
+.animation-delay-2 {
+    animation-delay: 2s;
+}
+
+.animation-delay-2\.5 {
+    animation-delay: 2.5s;
 }
 
 .animation-delay-3 {
     animation-delay: 3s;
 }
 
+.animation-delay-3\.5 {
+    animation-delay: 3.5s;
+}
+
+.animation-delay-4 {
+    animation-delay: 4s;
+}
+
+.animation-delay-4\.5 {
+    animation-delay: 4.5s;
+}
+
+.animation-delay-5 {
+    animation-delay: 5s;
+}
+
+.animation-delay-5\.5 {
+    animation-delay: 5.5s;
+}
+
 .animation-delay-6 {
     animation-delay: 6s;
 }
 
+.animation-delay-6\.5 {
+    animation-delay: 6.5s;
+}
+
+.animation-delay-7 {
+    animation-delay: 7s;
+}
+
 .animation-delay-7\.5 {
     animation-delay: 7.5s;
+}
+
+.animation-delay-9 {
+    animation-delay: 9s;
 }
 
 .text-glow {
@@ -138,4 +186,16 @@
 
 .box-glow {
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.box-glow-angular{
+    background: linear-gradient(135deg, #E3002B, #DD0031, #C51162, #512DA8, #1976D2);
+}
+
+.box-glow-matter{
+    background: linear-gradient(135deg, #76F09B, #F55F5F);
+}
+
+.box-glow-pixi{
+    background: linear-gradient(135deg, #E72264, #7A1134);
 }
