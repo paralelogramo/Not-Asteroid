@@ -56,7 +56,7 @@ export class Home {
             btn?.classList.remove("is-button-active");
             this.playAnimationOn = false;
             this.disabledButtons = true;
-            this.selectedOption.emit("play")
+            this.selectedOption.emit("game")
             this.animationHideView();
         }, 300);
     }

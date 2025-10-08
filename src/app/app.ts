@@ -4,13 +4,14 @@ import { Home } from "./views/home/home";
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { boxGithubLogo, boxInstagramLogo, boxLinkedinLogo } from '@ng-icons/boxicons/logos';
 import { Credit } from './views/credit/credit';
+import { Game } from './views/game/game';
 
 @Component({
     selector: 'app-root',
     imports: [
         Home,
         Credit,
-        NgIcon
+        Game
     ],
     templateUrl: './app.html',
     styleUrl: './app.css',
@@ -41,9 +42,11 @@ export class App {
 
     handleSelectedOption(event: any): void {
         switch (event) {
-            case "play":
+            case "game":
+                let elem = document.getElementById("stars-container");
+                elem?.classList.add("fade-down-half")
                 setTimeout(() => {
-                    console.log("activar play")
+                    this.currentViewStatus = "game";
                 }, 3500);
                 break;
             case "credit":
