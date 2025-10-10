@@ -1,5 +1,7 @@
 <div class="relative w-screen h-screen overflow-hidden bg-slate-900">
-    <div class="absolute inset-0 z-0 opacity-50 blur-[1px]" id="stars-container"></div>
+    @if (currentView != "game") {
+        <div class="absolute inset-0 z-0 opacity-10 blur-[1px]" id="stars-container"></div>
+    }
     
     @switch (currentView) {
         @case ("home") {

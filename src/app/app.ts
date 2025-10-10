@@ -26,7 +26,7 @@ import { Game } from './views/game/game';
 export class App {
     protected title = 'not-asteroids';
 
-    private currentViewStatus: string = "home";
+    private currentViewStatus: string = "game";
 
     starList: string[] = ["bg-star-tiny", "bg-star-small", "bg-star-medium", "bg-star-large"];
     meteorList: string[] = ["bg-meteor-small", "bg-meteor-large", "bg-meteor-detailed-small", "bg-meteor-detailed-large", "bg-meteor-square-small", "bg-meteor-square-large", "bg-meteor-detailed-square-small", "bg-meteor-detailed-square-large"]
